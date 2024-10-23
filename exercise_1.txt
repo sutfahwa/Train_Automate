@@ -1,0 +1,6 @@
+Exercise_1
+
+ข้อที่ 1 : ให้ทำการสร้าง Repository ใหม่ใน account ของตัวเองโดยตั้งค่าเป็น Public หลังจากนั้นให้ทำตามคำสั่งดังนี้
+    a. สร้าง branch ใหม่ โดยกำหนดชื่อ brance = git_test หลังจากนั้นทำการ push file text(อะไรก็ได้) ขึ้นไปไว้ใน branch นั้น
+    b. สร้าง branch ใหม่อีก 1 brance โดยกำหนดชื่อ brance= git_test2 หลังจากนั้นทำการ push file text ไปที่ branch=git_test2 
+    และทำการ merge branch git_test2 ไปที่ branch main
