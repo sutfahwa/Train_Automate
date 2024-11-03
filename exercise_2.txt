@@ -10,8 +10,13 @@ Exercise_2
         และทำการ expect ว่า c ต้อง = 20
         โดยต้องมีการ log ค่าของ c มาให้ดูด้วย
 
-ข้อที่ 2 : ให้ใช้ library ในการ get วันที่ปัจจุบันมา และ expect กับวันที่ที่เรา fix ค่าไว้ว่าตรงกันหรือไม่
+ข้อที่ 2 : ให้ใช้ library ในการ get วันที่ปัจจุบันมา (โดยใช้ format DD/MM/YYYY เช่น 01/01/2024) และ expect กับวันที่ที่เรา fix ค่าไว้ว่าตรงกันหรือไม่
     ตัวอย่างเช่น
     a = get date today
     b = กำหนดค่าเป็นวันที่ปัจจุบัน
     expect ว่า a = b
+
+ข้อที่ 3 : ให้ใช้ Library Collections ในการสร้าง List ขึ้นมาและนับจำนวน item ใน List
+    สร้าง list ที่มี item ดังนี้  Thailand, Brazil, Canada, Peru, India, Malaysia, Vietnam
+    หลังจากนั้นใช้ Keyword ในการนับจำนวน item ใน List และ Log ออกมาให้ดู
+    เพิ่มเติม (ถ้ามีเวลาเหลือ optional) ให้วนลูปเพื่อ log item มา เช่น เมื่อเข้า loop i=1 ให้ log Thailand เมื่อเข้า loop i=2 ให้ log Brazil เป็นต้น
