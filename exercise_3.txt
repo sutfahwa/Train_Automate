@@ -1,6 +1,6 @@
 Exercise_3
 
-ข้อที่ 1 : เขียน automate web mellow ดังนี้
+ข้อที่ 1 : เขียน automate web mellow (http://webapp-qa.mellow.io/#/announce) ดังนี้
     a. automate login web mellow  ด้วยข้อมูลดังนี้
         username = qsquad
         password = password
@@ -8,7 +8,8 @@ Exercise_3
 
 ข้อที่ 2 : เขียน automate สร้าง Project ใน Todo โดยกรอกข้อมูลดังนี้
         Project name : Test automate
-        Description : Project create from automate
         Add stage : Todo
-    หลังจากนั้นสร้าง task ใน project Test automate 1 task
+    หลังจากนั้นสร้าง task ใน project Test automate 1 task โดยกำหนดข้อมูลดังนี้
+        Task name : Test Create Task
+
 
