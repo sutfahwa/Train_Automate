@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on darwin)" generated="2024-11-06T17:38:00.247555" rpa="false" schemaversion="5">
+<suite id="s1" name="featureTodo" source="/Users/ryu/Train_Automate/ex_03-1/features/featureTodo.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Mellow website" owner="common_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:00.443515" level="INFO">Opening browser 'Chrome' to base url 'http://webapp-qa.mellow.io/#/announce'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-06T17:38:00.443210" elapsed="3.315805"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-06T17:38:03.759597" elapsed="0.347648"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${usernameInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.107500" elapsed="0.021176"/>
+</kw>
+<status status="PASS" start="2024-11-06T17:38:00.442949" elapsed="3.685898"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.129107" elapsed="0.001117"/>
+</kw>
+<arg>Open Mellow website</arg>
+<arg>AND</arg>
+<arg>Set Selenium Timeout</arg>
+<arg>10s</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-11-06T17:38:00.442587" elapsed="3.687744"/>
+</kw>
+<test id="s1-t1" name="Create Project" line="21">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Fill in username field with &quot;qsquad&quot;" owner="common_keywords" source_name="Fill in username field with &quot;${username}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${usernameInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.131882" elapsed="0.014613"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.147058" level="INFO">Typing text 'qsquad' into text field 'id=username-input'.</msg>
+<arg>${usernameInput}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.146739" elapsed="0.140283"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.308418" level="INFO">Content of text field 'id=username-input' is 'qsquad'.</msg>
+<arg>${usernameInput}</arg>
+<arg>${username}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.287243" elapsed="0.021261"/>
+</kw>
+<status status="PASS" start="2024-11-06T17:38:04.131506" elapsed="0.177110"/>
+</kw>
+<kw name="Fill in password field with &quot;password&quot;" owner="common_keywords" source_name="Fill in password field with &quot;${password}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${passwordInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.309143" elapsed="0.016122"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.325681" level="INFO">Typing text 'password' into text field 'id=password-input'.</msg>
+<arg>${passwordInput}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.325436" elapsed="0.066114"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.409104" level="INFO">Content of text field 'id=password-input' is 'password'.</msg>
+<arg>${passwordInput}</arg>
+<arg>${password}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.391766" elapsed="0.017423"/>
+</kw>
+<status status="PASS" start="2024-11-06T17:38:04.308840" elapsed="0.100449"/>
+</kw>
+<kw name="Click Login button" owner="common_keywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.424405" level="INFO">Element 'id=login-btn' is displayed.</msg>
+<arg>${loginBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.409770" elapsed="0.014771"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.424945" level="INFO">Clicking element 'id=login-btn'.</msg>
+<arg>${loginBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.424721" elapsed="0.053561"/>
+</kw>
+<status status="PASS" start="2024-11-06T17:38:04.409493" elapsed="0.068953"/>
+</kw>
+<kw name="Should show success message with &quot;Login successfully&quot;" owner="common_keywords" source_name="Should show success message with &quot;${message}&quot;">
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${successMessage}</arg>
+<arg>${message}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.479075" elapsed="0.251937"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.743242" level="INFO">Element 'class=notification-message' contains text 'Login successfully'.</msg>
+<arg>${successMessage}</arg>
+<arg>${message}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.731249" elapsed="0.012080"/>
+</kw>
+<status status="PASS" start="2024-11-06T17:38:04.478713" elapsed="0.264722"/>
+</kw>
+<arg>Fill in username field with "qsquad"</arg>
+<arg>AND</arg>
+<arg>Fill in password field with "password"</arg>
+<arg>AND</arg>
+<arg>Click Login button</arg>
+<arg>AND</arg>
+<arg>Should show success message with "Login successfully"</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-11-06T17:38:04.131164" elapsed="0.612343"/>
+</kw>
+<kw name="Tap App list icon" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-06T17:38:04.744438" level="INFO">Clicking element 'class=app-menu-icon'.</msg>
+<msg time="2024-11-06T17:38:05.052640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-06T17:38:05.052928" level="FAIL">Element with locator 'class=app-menu-icon' not found.</msg>
+<arg>${appMenuIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-06T17:38:04.744228" elapsed="0.312956">Element with locator 'class=app-menu-icon' not found.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${appMenuList}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-11-06T17:38:05.057510" elapsed="0.000053"/>
+</kw>
+<status status="FAIL" start="2024-11-06T17:38:04.743930" elapsed="0.313825">Element with locator 'class=app-menu-icon' not found.</status>
+</kw>
+<kw name="Tap Todo button" owner="todo_keywords">
+<status status="NOT RUN" start="2024-11-06T17:38:05.058054" elapsed="0.000046"/>
+</kw>
+<kw name="Tap Add Project button" owner="todo_keywords">
+<status status="NOT RUN" start="2024-11-06T17:38:05.058309" elapsed="0.000040"/>
+</kw>
+<kw name="Fill in project name with &quot;Test1&quot;" owner="todo_keywords" source_name="Fill in project name with &quot;${projectName}&quot;">
+<status status="NOT RUN" start="2024-11-06T17:38:05.058553" elapsed="0.000042"/>
+</kw>
+<kw name="Fill in state with &quot;Todo&quot;" owner="todo_keywords" source_name="Fill in state with &quot;${state}&quot;">
+<status status="NOT RUN" start="2024-11-06T17:38:05.058804" elapsed="0.000044"/>
+</kw>
+<status status="FAIL" start="2024-11-06T17:38:04.130487" elapsed="0.928670">Element with locator 'class=app-menu-icon' not found.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-11-06T17:38:05.059909" elapsed="0.202077"/>
+</kw>
+<status status="FAIL" start="2024-11-06T17:38:00.248956" elapsed="5.013222"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="featureTodo">featureTodo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
