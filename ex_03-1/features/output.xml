@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on darwin)" generated="2024-11-06T17:38:00.247555" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-11-12T17:33:33.601285" rpa="false" schemaversion="5">
 <suite id="s1" name="featureTodo" source="/Users/ryu/Train_Automate/ex_03-1/features/featureTodo.robot">
 <kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Open Mellow website" owner="common_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:00.443515" level="INFO">Opening browser 'Chrome' to base url 'http://webapp-qa.mellow.io/#/announce'.</msg>
+<msg time="2024-11-12T17:33:33.696345" level="INFO">Opening browser 'Chrome' to base url 'http://webapp-qa.mellow.io/#/announce'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-06T17:38:00.443210" elapsed="3.315805"/>
+<status status="PASS" start="2024-11-12T17:33:33.696240" elapsed="4.775488"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-06T17:38:03.759597" elapsed="0.347648"/>
+<status status="PASS" start="2024-11-12T17:33:38.472620" elapsed="0.319089"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${usernameInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.107500" elapsed="0.021176"/>
+<status status="PASS" start="2024-11-12T17:33:38.791861" elapsed="0.016569"/>
 </kw>
-<status status="PASS" start="2024-11-06T17:38:00.442949" elapsed="3.685898"/>
+<status status="PASS" start="2024-11-12T17:33:33.696130" elapsed="5.112393"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.129107" elapsed="0.001117"/>
+<status status="PASS" start="2024-11-12T17:33:38.808676" elapsed="0.000742"/>
 </kw>
 <arg>Open Mellow website</arg>
 <arg>AND</arg>
 <arg>Set Selenium Timeout</arg>
 <arg>10s</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2024-11-06T17:38:00.442587" elapsed="3.687744"/>
+<status status="PASS" start="2024-11-12T17:33:33.695977" elapsed="5.113479"/>
 </kw>
-<test id="s1-t1" name="Create Project" line="21">
+<test id="s1-t1" name="Create Project" line="18">
 <kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Fill in username field with &quot;qsquad&quot;" owner="common_keywords" source_name="Fill in username field with &quot;${username}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${usernameInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.131882" elapsed="0.014613"/>
+<status status="PASS" start="2024-11-12T17:33:38.810480" elapsed="0.008247"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.147058" level="INFO">Typing text 'qsquad' into text field 'id=username-input'.</msg>
+<msg time="2024-11-12T17:33:38.819059" level="INFO">Typing text 'qsquad' into text field 'id=username-input'.</msg>
 <arg>${usernameInput}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.146739" elapsed="0.140283"/>
+<status status="PASS" start="2024-11-12T17:33:38.818862" elapsed="0.218086"/>
 </kw>
 <kw name="Textfield Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.308418" level="INFO">Content of text field 'id=username-input' is 'qsquad'.</msg>
+<msg time="2024-11-12T17:33:39.047874" level="INFO">Content of text field 'id=username-input' is 'qsquad'.</msg>
 <arg>${usernameInput}</arg>
 <arg>${username}</arg>
 <doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.287243" elapsed="0.021261"/>
+<status status="PASS" start="2024-11-12T17:33:39.037062" elapsed="0.010864"/>
 </kw>
-<status status="PASS" start="2024-11-06T17:38:04.131506" elapsed="0.177110"/>
+<status status="PASS" start="2024-11-12T17:33:38.810017" elapsed="0.237970"/>
 </kw>
 <kw name="Fill in password field with &quot;password&quot;" owner="common_keywords" source_name="Fill in password field with &quot;${password}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${passwordInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.309143" elapsed="0.016122"/>
+<status status="PASS" start="2024-11-12T17:33:39.048243" elapsed="0.008351"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.325681" level="INFO">Typing text 'password' into text field 'id=password-input'.</msg>
+<msg time="2024-11-12T17:33:39.056850" level="INFO">Typing text 'password' into text field 'id=password-input'.</msg>
 <arg>${passwordInput}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.325436" elapsed="0.066114"/>
+<status status="PASS" start="2024-11-12T17:33:39.056707" elapsed="0.044382"/>
 </kw>
 <kw name="Textfield Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.409104" level="INFO">Content of text field 'id=password-input' is 'password'.</msg>
+<msg time="2024-11-12T17:33:39.112375" level="INFO">Content of text field 'id=password-input' is 'password'.</msg>
 <arg>${passwordInput}</arg>
 <arg>${password}</arg>
 <doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.391766" elapsed="0.017423"/>
+<status status="PASS" start="2024-11-12T17:33:39.101250" elapsed="0.011178"/>
 </kw>
-<status status="PASS" start="2024-11-06T17:38:04.308840" elapsed="0.100449"/>
+<status status="PASS" start="2024-11-12T17:33:39.048102" elapsed="0.064380"/>
 </kw>
 <kw name="Click Login button" owner="common_keywords">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.424405" level="INFO">Element 'id=login-btn' is displayed.</msg>
+<msg time="2024-11-12T17:33:39.121537" level="INFO">Element 'id=login-btn' is displayed.</msg>
 <arg>${loginBtn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.409770" elapsed="0.014771"/>
+<status status="PASS" start="2024-11-12T17:33:39.112738" elapsed="0.008860"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.424945" level="INFO">Clicking element 'id=login-btn'.</msg>
+<msg time="2024-11-12T17:33:39.121859" level="INFO">Clicking element 'id=login-btn'.</msg>
 <arg>${loginBtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.424721" elapsed="0.053561"/>
+<status status="PASS" start="2024-11-12T17:33:39.121727" elapsed="0.023826"/>
 </kw>
-<status status="PASS" start="2024-11-06T17:38:04.409493" elapsed="0.068953"/>
+<status status="PASS" start="2024-11-12T17:33:39.112598" elapsed="0.033033"/>
 </kw>
 <kw name="Should show success message with &quot;Login successfully&quot;" owner="common_keywords" source_name="Should show success message with &quot;${message}&quot;">
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>${successMessage}</arg>
 <arg>${message}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.479075" elapsed="0.251937"/>
+<status status="PASS" start="2024-11-12T17:33:39.146137" elapsed="0.256953"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.743242" level="INFO">Element 'class=notification-message' contains text 'Login successfully'.</msg>
+<msg time="2024-11-12T17:33:39.412191" level="INFO">Element 'class=notification-message' contains text 'Login successfully'.</msg>
 <arg>${successMessage}</arg>
 <arg>${message}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.731249" elapsed="0.012080"/>
+<status status="PASS" start="2024-11-12T17:33:39.403246" elapsed="0.009006"/>
 </kw>
-<status status="PASS" start="2024-11-06T17:38:04.478713" elapsed="0.264722"/>
+<status status="PASS" start="2024-11-12T17:33:39.145863" elapsed="0.266457"/>
 </kw>
 <arg>Fill in username field with "qsquad"</arg>
 <arg>AND</arg>
@@ -118,52 +118,872 @@
 <arg>AND</arg>
 <arg>Should show success message with "Login successfully"</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2024-11-06T17:38:04.131164" elapsed="0.612343"/>
+<status status="PASS" start="2024-11-12T17:33:38.809875" elapsed="0.602476"/>
 </kw>
 <kw name="Tap App list icon" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${appMenuIcon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:39.413353" elapsed="0.217693"/>
+</kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-06T17:38:04.744438" level="INFO">Clicking element 'class=app-menu-icon'.</msg>
-<msg time="2024-11-06T17:38:05.052640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-06T17:38:05.052928" level="FAIL">Element with locator 'class=app-menu-icon' not found.</msg>
+<msg time="2024-11-12T17:33:39.631278" level="INFO">Clicking element 'class=app-menu-icon'.</msg>
 <arg>${appMenuIcon}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-06T17:38:04.744228" elapsed="0.312956">Element with locator 'class=app-menu-icon' not found.</status>
+<status status="PASS" start="2024-11-12T17:33:39.631157" elapsed="0.321862"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:39.973270" level="INFO">Element 'id=app-menu-list' is displayed.</msg>
 <arg>${appMenuList}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-11-06T17:38:05.057510" elapsed="0.000053"/>
+<status status="PASS" start="2024-11-12T17:33:39.953212" elapsed="0.020126"/>
 </kw>
-<status status="FAIL" start="2024-11-06T17:38:04.743930" elapsed="0.313825">Element with locator 'class=app-menu-icon' not found.</status>
+<status status="PASS" start="2024-11-12T17:33:39.413137" elapsed="0.560277"/>
 </kw>
 <kw name="Tap Todo button" owner="todo_keywords">
-<status status="NOT RUN" start="2024-11-06T17:38:05.058054" elapsed="0.000046"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:39.973929" level="INFO">Clicking element 'id=app-icon-todo'.</msg>
+<arg>${appIconTodo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:39.973797" elapsed="0.049522"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:40.035029" level="INFO">Element 'id=left-menu' is displayed.</msg>
+<arg>${leftMenuBar}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:40.023448" elapsed="0.011646"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:40.046130" level="INFO">Element 'id=left-menu' contains text 'Todo'.</msg>
+<arg>${leftMenuBar}</arg>
+<arg>Todo</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:33:40.035215" elapsed="0.011301"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:39.973594" elapsed="0.072995"/>
 </kw>
 <kw name="Tap Add Project button" owner="todo_keywords">
-<status status="NOT RUN" start="2024-11-06T17:38:05.058309" elapsed="0.000040"/>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-12T17:33:40.046999" elapsed="0.000131"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:40.047283" level="INFO">Clicking element 'id=add-project-button'.</msg>
+<arg>${addProjectBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:40.047191" elapsed="1.041999"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${projectNameInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:41.089791" elapsed="1.037978"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:40.046763" elapsed="2.081507"/>
 </kw>
 <kw name="Fill in project name with &quot;Test1&quot;" owner="todo_keywords" source_name="Fill in project name with &quot;${projectName}&quot;">
-<status status="NOT RUN" start="2024-11-06T17:38:05.058553" elapsed="0.000042"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:42.130810" level="INFO">Typing text 'Test1' into text field 'id=project-name-input'.</msg>
+<arg>${projectNameInput}</arg>
+<arg>${projectName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:42.130098" elapsed="1.628518"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:45.799206" level="INFO">Content of text field 'id=project-name-input' is 'Test1'.</msg>
+<arg>${projectNameInput}</arg>
+<arg>${projectName}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:33:43.759167" elapsed="2.040140"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:42.129094" elapsed="3.670310"/>
 </kw>
 <kw name="Fill in state with &quot;Todo&quot;" owner="todo_keywords" source_name="Fill in state with &quot;${state}&quot;">
-<status status="NOT RUN" start="2024-11-06T17:38:05.058804" elapsed="0.000044"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:45.800028" level="INFO">Typing text 'Todo' into text field 'css=#project-state-order-container &gt; div.input-container &gt; div &gt; div &gt; div.item-input-value-container &gt; span &gt; input'.</msg>
+<arg>${addStateInput}</arg>
+<arg>${state}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:45.799863" elapsed="1.597757"/>
 </kw>
-<status status="FAIL" start="2024-11-06T17:38:04.130487" elapsed="0.928670">Element with locator 'class=app-menu-icon' not found.</status>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:49.456555" level="INFO">Content of text field 'css=#project-state-order-container &gt; div.input-container &gt; div &gt; div &gt; div.item-input-value-container &gt; span &gt; input' is 'Todo'.</msg>
+<arg>${addStateInput}</arg>
+<arg>${state}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:33:47.398910" elapsed="2.057844"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:49.457456" level="INFO">Clicking element 'css=#project-state-order-container &gt; div.input-container &gt; div &gt; div &gt; div.item-input-value-container &gt; span &gt; span &gt; div'.</msg>
+<arg>${addStateBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:49.457088" elapsed="1.077744"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:45.799627" elapsed="4.735660"/>
+</kw>
+<kw name="Tap Add Project on Modal" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:50.537409" level="INFO">Clicking element 'id=create-project-calendar-btn'.</msg>
+<arg>${addProjectOnModalBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:50.536900" elapsed="1.077179"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:52.643182" level="INFO">Element 'class=notification-success' is displayed.</msg>
+<arg>${notificationSuccessToast}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:51.614547" elapsed="1.028743"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:50.536124" elapsed="2.107260"/>
+</kw>
+<kw name="Should show project name &quot;Test1&quot;" owner="todo_keywords" source_name="Should show project name &quot;${projectName}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${projectNameHeader}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:52.643871" elapsed="1.024911"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:54.690132" level="INFO">Element 'class=section-header-big-title' contains text 'Test1'.</msg>
+<arg>${projectNameHeader}</arg>
+<arg>${projectName}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:33:53.668939" elapsed="1.021590"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:52.643611" elapsed="2.047404"/>
+</kw>
+<kw name="Tap + button to add task" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${plusTaskBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:54.692837" elapsed="1.038418"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:55.733057" level="INFO">Clicking element 'id=add-task-inline-button'.</msg>
+<arg>${plusTaskBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:55.732177" elapsed="1.067531"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:57.837255" level="INFO">Element 'class=ant-input' is displayed.</msg>
+<arg>${taskNameInput}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:56.800439" elapsed="1.037212"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:54.691890" elapsed="3.146142"/>
+</kw>
+<kw name="Fill in Task name with &quot;Task1&quot;" owner="todo_keywords" source_name="Fill in Task name with &quot;${taskText}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${taskNameInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:33:57.840046" elapsed="1.031547"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:33:58.873426" level="INFO">Typing text 'Task1' into text field 'class=ant-input'.</msg>
+<arg>${taskNameInput}</arg>
+<arg>${taskText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:33:58.872504" elapsed="1.589977"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:02.510968" level="INFO">Content of text field 'class=ant-input' is 'Task1'.</msg>
+<arg>${TaskNameInput}</arg>
+<arg>${taskText}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:34:00.463269" elapsed="2.048002"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:57.839043" elapsed="4.672593"/>
+</kw>
+<kw name="Tap Add Task name button" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:02.513661" level="INFO">Clicking element 'class=add-action-label-button'.</msg>
+<arg>${addTaskName}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:02.513144" elapsed="1.073036"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:04.621575" level="INFO">Element 'class=notification-success' is displayed.</msg>
+<arg>${notificationSuccessToast}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:03.590774" elapsed="1.031277"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:02.512448" elapsed="2.109969"/>
+</kw>
+<kw name="Should show Task name &quot;Task1&quot;" owner="todo_keywords" source_name="Should show Task name &quot;${Taskname}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${taskNameOnModal}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:04.624205" elapsed="1.035543"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:06.699401" level="INFO">Element 'id=update-task-task-name-input' contains text 'Task1'.</msg>
+<arg>${taskNameOnModal}</arg>
+<arg>${Taskname}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:34:05.660657" elapsed="1.039077"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:04.623269" elapsed="2.076783"/>
+</kw>
+<kw name="Tap X button to close Task modal" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${closeModalTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:06.701313" elapsed="1.032200"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:07.735052" level="INFO">Clicking element 'id=close-content-modal-btn'.</msg>
+<arg>${closeModalTask}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:07.734285" elapsed="1.071159"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:09.323327" level="INFO">Element 'id=update-task-task-name-input' did not exist.</msg>
+<arg>${taskNameOnModal}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:08.806280" elapsed="0.517367"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:06.700650" elapsed="2.623271"/>
+</kw>
+<kw name="Should show task &quot;Task1&quot; in task list" owner="todo_keywords" source_name="Should show task &quot;${taskName}&quot; in task list">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${listTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:09.325684" elapsed="1.039377"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:10.888252" level="INFO">${list} = 1</msg>
+<var>${list}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:10.365863" elapsed="0.522552"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:10.890079" level="INFO">1</msg>
+<arg>${list}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:10.889264" elapsed="0.000912"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:11.931594" level="INFO">${ListTaskItem} = Task1</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:10.891566" elapsed="1.040205"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:11.933120" level="INFO">Task1</msg>
+<arg>${ListTaskItem}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:11.932550" elapsed="0.000645"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<break>
+<status status="PASS" start="2024-11-12T17:34:11.939616" elapsed="0.000241"/>
+</break>
+<status status="PASS" start="2024-11-12T17:34:11.933459" elapsed="0.006518"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:11.933377" elapsed="0.006674"/>
+</if>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-12T17:34:10.891264" elapsed="1.049083"/>
+</iter>
+<var>${i}</var>
+<value>${list}</value>
+<status status="PASS" start="2024-11-12T17:34:10.890470" elapsed="1.049983"/>
+</for>
+<status status="PASS" start="2024-11-12T17:34:09.325005" elapsed="2.615608"/>
+</kw>
+<kw name="Tap + button to add task" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${plusTaskBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:11.941379" elapsed="1.030462"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:12.973616" level="INFO">Clicking element 'id=add-task-inline-button'.</msg>
+<arg>${plusTaskBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:12.972727" elapsed="1.062008"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:15.059652" level="INFO">Element 'class=ant-input' is displayed.</msg>
+<arg>${taskNameInput}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:14.035575" elapsed="1.024416"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:11.941024" elapsed="3.119252"/>
+</kw>
+<kw name="Fill in Task name with &quot;Task2&quot;" owner="todo_keywords" source_name="Fill in Task name with &quot;${taskText}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${taskNameInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:15.061507" elapsed="1.031829"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:16.095011" level="INFO">Typing text 'Task2' into text field 'class=ant-input'.</msg>
+<arg>${taskNameInput}</arg>
+<arg>${taskText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:16.094136" elapsed="1.597986"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:19.745704" level="INFO">Content of text field 'class=ant-input' is 'Task2'.</msg>
+<arg>${TaskNameInput}</arg>
+<arg>${taskText}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:34:17.693393" elapsed="2.052703"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:15.060870" elapsed="4.685638"/>
+</kw>
+<kw name="Tap Add Task name button" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:19.749079" level="INFO">Clicking element 'class=add-action-label-button'.</msg>
+<arg>${addTaskName}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:19.748424" elapsed="1.064130"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:21.877995" level="INFO">Element 'class=notification-success' is displayed.</msg>
+<arg>${notificationSuccessToast}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:20.812787" elapsed="1.065538"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:19.747411" elapsed="2.131214"/>
+</kw>
+<kw name="Should show Task name &quot;Task2&quot;" owner="todo_keywords" source_name="Should show Task name &quot;${Taskname}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${taskNameOnModal}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:21.880711" elapsed="1.031912"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:23.946400" level="INFO">Element 'id=update-task-task-name-input' contains text 'Task2'.</msg>
+<arg>${taskNameOnModal}</arg>
+<arg>${Taskname}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:34:22.913576" elapsed="1.033261"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:21.879452" elapsed="2.067770"/>
+</kw>
+<kw name="Tap X button to close Task modal" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${closeModalTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:23.949041" elapsed="1.033072"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:24.983899" level="INFO">Clicking element 'id=close-content-modal-btn'.</msg>
+<arg>${closeModalTask}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:24.983010" elapsed="1.066127"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:26.567163" level="INFO">Element 'id=update-task-task-name-input' did not exist.</msg>
+<arg>${taskNameOnModal}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:26.050019" elapsed="0.517533"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:23.948055" elapsed="2.619849"/>
+</kw>
+<kw name="Should show task &quot;Task2&quot; in task list" owner="todo_keywords" source_name="Should show task &quot;${taskName}&quot; in task list">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${listTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:26.570170" elapsed="1.033458"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:28.120746" level="INFO">${list} = 2</msg>
+<var>${list}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:27.605020" elapsed="0.515887"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:28.122301" level="INFO">2</msg>
+<arg>${list}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:28.121716" elapsed="0.000690"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:29.158599" level="INFO">${ListTaskItem} = Task1</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:28.123564" elapsed="1.035086"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:29.159044" level="INFO">Task1</msg>
+<arg>${ListTaskItem}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:29.158865" elapsed="0.000222"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<break>
+<status status="NOT RUN" start="2024-11-12T17:34:29.159423" elapsed="0.000028"/>
+</break>
+<status status="NOT RUN" start="2024-11-12T17:34:29.159188" elapsed="0.000303"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:29.159159" elapsed="0.000367"/>
+</if>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-12T17:34:28.123300" elapsed="1.036249"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:30.192639" level="INFO">${ListTaskItem} = Task2</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:29.159828" elapsed="1.032922"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:30.193663" level="INFO">Task2</msg>
+<arg>${ListTaskItem}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:30.193308" elapsed="0.000421"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<break>
+<status status="PASS" start="2024-11-12T17:34:30.194327" elapsed="0.000089"/>
+</break>
+<status status="PASS" start="2024-11-12T17:34:30.193930" elapsed="0.000563"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:30.193867" elapsed="0.000688"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-11-12T17:34:29.159723" elapsed="1.034885"/>
+</iter>
+<var>${i}</var>
+<value>${list}</value>
+<status status="PASS" start="2024-11-12T17:34:28.122629" elapsed="2.072071"/>
+</for>
+<status status="PASS" start="2024-11-12T17:34:26.569071" elapsed="3.625787"/>
+</kw>
+<kw name="Tap Task name &quot;Task2&quot; on Task list" owner="todo_keywords" source_name="Tap Task name &quot;${taskName}&quot; on Task list">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${listTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:30.195995" elapsed="1.032259"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:31.746294" level="INFO">${list} = 2</msg>
+<var>${list}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:31.229098" elapsed="0.517382"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:32.783257" level="INFO">${ListTaskItem} = Task1</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:31.748163" elapsed="1.035259"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-detail-leading-container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:34:32.784984" elapsed="0.000092"/>
+</kw>
+<status status="NOT RUN" start="2024-11-12T17:34:32.783929" elapsed="0.001257"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:32.783836" elapsed="0.001474"/>
+</if>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-12T17:34:31.747655" elapsed="1.037731"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:33.819594" level="INFO">${ListTaskItem} = Task2</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:32.786227" elapsed="1.033533"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:33.822072" level="INFO">Clicking element '//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][1+1]//*[@class="task-detail-leading-container"]'.</msg>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-detail-leading-container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:33.821282" elapsed="1.073477"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:33.820270" elapsed="1.074756"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:33.820170" elapsed="1.075000"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-11-12T17:34:32.785891" elapsed="2.109348"/>
+</iter>
+<var>${i}</var>
+<value>${list}</value>
+<status status="PASS" start="2024-11-12T17:34:31.746880" elapsed="3.148479"/>
+</for>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:35.922710" level="INFO">Element 'id=update-task-task-name-input' is displayed.</msg>
+<arg>${taskNameOnModal}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:34.895862" elapsed="1.026998"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:30.195500" elapsed="5.727489"/>
+</kw>
+<kw name="Tap Edit Task name button" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${editTaskNameBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:35.923578" elapsed="1.033241"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:36.958410" level="INFO">Clicking element 'id=edit-task'.</msg>
+<arg>${editTaskNameBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:36.957619" elapsed="1.071324"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:39.062946" level="INFO">Element 'class=description-input' is displayed.</msg>
+<arg>${taskDescriptionInput}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:38.029812" elapsed="1.033548"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:35.923284" elapsed="3.140441"/>
+</kw>
+<kw name="Edit Task name to &quot;edited&quot;" owner="todo_keywords" source_name="Edit Task name to &quot;${editedText}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${taskNameOnModal}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:39.065466" elapsed="1.033607"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${taskNameOnModal}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:40.099806" elapsed="1.053508"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:41.155193" level="INFO">Typing text 'edited' into text field 'id=update-task-task-name-input'.</msg>
+<arg>${taskNameOnModal}</arg>
+<arg>${editedText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:41.154261" elapsed="1.640968"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:44.857388" level="INFO">Content of text field 'id=update-task-task-name-input' is 'edited'.</msg>
+<arg>${taskNameOnModal}</arg>
+<arg>${editedText}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T17:34:42.796007" elapsed="2.061761"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:39.064531" elapsed="5.793624"/>
+</kw>
+<kw name="Tap Save Task button" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${saveTaskBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:44.859761" elapsed="1.038128"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:45.898501" level="INFO">Clicking element 'id=update-task-btn'.</msg>
+<arg>${saveTaskBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:45.898194" elapsed="1.085285"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:48.014074" level="INFO">Element 'class=notification-success' is displayed.</msg>
+<arg>${notificationSuccessToast}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:46.983785" elapsed="1.030644"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:44.858974" elapsed="3.155742"/>
+</kw>
+<kw name="Tap X button to close Task modal" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${closeModalTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:48.015746" elapsed="1.034553"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:49.052086" level="INFO">Clicking element 'id=close-content-modal-btn'.</msg>
+<arg>${closeModalTask}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:49.051215" elapsed="1.076283"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:50.641836" level="INFO">Element 'id=update-task-task-name-input' did not exist.</msg>
+<arg>${taskNameOnModal}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:50.127887" elapsed="0.514067"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:48.015292" elapsed="2.626765"/>
+</kw>
+<kw name="Should show task &quot;edited&quot; in task list" owner="todo_keywords" source_name="Should show task &quot;${taskName}&quot; in task list">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${listTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:50.642642" elapsed="1.030726"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:52.192184" level="INFO">${list} = 2</msg>
+<var>${list}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:51.674439" elapsed="0.517915"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:52.193968" level="INFO">2</msg>
+<arg>${list}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:52.193159" elapsed="0.000919"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:53.232289" level="INFO">${ListTaskItem} = Task1</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:52.195123" elapsed="1.037335"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:53.233809" level="INFO">Task1</msg>
+<arg>${ListTaskItem}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:53.233249" elapsed="0.000670"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<break>
+<status status="NOT RUN" start="2024-11-12T17:34:53.234991" elapsed="0.000119"/>
+</break>
+<status status="NOT RUN" start="2024-11-12T17:34:53.234239" elapsed="0.001003"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:53.234151" elapsed="0.001193"/>
+</if>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-12T17:34:52.194910" elapsed="1.042430"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:54.269997" level="INFO">${ListTaskItem} = edited</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:53.238159" elapsed="1.031885"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-12T17:34:54.270388" level="INFO">edited</msg>
+<arg>${ListTaskItem}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-12T17:34:54.270231" elapsed="0.000205"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<break>
+<status status="PASS" start="2024-11-12T17:34:54.270689" elapsed="0.000090"/>
+</break>
+<status status="PASS" start="2024-11-12T17:34:54.270512" elapsed="0.000303"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:54.270493" elapsed="0.000351"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-11-12T17:34:53.237885" elapsed="1.032996"/>
+</iter>
+<var>${i}</var>
+<value>${list}</value>
+<status status="PASS" start="2024-11-12T17:34:52.194296" elapsed="2.076628"/>
+</for>
+<status status="PASS" start="2024-11-12T17:34:50.642437" elapsed="3.628555"/>
+</kw>
+<kw name="Tap kebab icon on task &quot;Task1&quot;" owner="todo_keywords" source_name="Tap kebab icon on task &quot;${taskName}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${listTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:54.271506" elapsed="1.029648"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:55.820245" level="INFO">${list} = 2</msg>
+<var>${list}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:55.302039" elapsed="0.518343"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:56.857956" level="INFO">${ListTaskItem} = Task1</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:55.821615" elapsed="1.036516"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:56.860302" level="INFO">Clicking element '//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][0+1]//*[@class="option-dropdown-icon kebab-icon ant-dropdown-trigger"]'.</msg>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="option-dropdown-icon kebab-icon ant-dropdown-trigger"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:56.859671" elapsed="1.081535"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:56.858658" elapsed="1.082892"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:56.858558" elapsed="1.083154"/>
+</if>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-12T17:34:55.821248" elapsed="2.120559"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:34:58.981138" level="INFO">${ListTaskItem} = edited</msg>
+<var>${ListTaskItem}</var>
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="task-name overflow-ellipse"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:34:57.942984" elapsed="1.038311"/>
+</kw>
+<if>
+<branch type="IF" condition="'${ListTaskItem}' == '${taskName}'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//*[@class="height-same-parent task-list-container"]//*[@class="task-item-container"][${i}+1]//*[@class="option-dropdown-icon kebab-icon ant-dropdown-trigger"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-12T17:34:58.982727" elapsed="0.000090"/>
+</kw>
+<status status="NOT RUN" start="2024-11-12T17:34:58.981778" elapsed="0.001131"/>
+</branch>
+<status status="PASS" start="2024-11-12T17:34:58.981662" elapsed="0.001330"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-11-12T17:34:57.942477" elapsed="1.040570"/>
+</iter>
+<var>${i}</var>
+<value>${list}</value>
+<status status="PASS" start="2024-11-12T17:34:55.820680" elapsed="3.162488"/>
+</for>
+<status status="PASS" start="2024-11-12T17:34:54.271261" elapsed="4.712116"/>
+</kw>
+<kw name="Tap Delete task button on kebab" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${deleteTaskOnKebabBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:34:58.984449" elapsed="1.039382"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:00.024928" level="INFO">Clicking element '//*[@class="ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical"]//*[@class="ant-dropdown-menu-item"]'.</msg>
+<arg>${deleteTaskOnKebabBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:35:00.024396" elapsed="1.085635"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:02.148742" level="INFO">Element 'id=confirm-delete-task' is displayed.</msg>
+<arg>${confirmDeleteTaskOnModalBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:01.110907" elapsed="1.038237"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:34:58.983885" elapsed="3.165633"/>
+</kw>
+<kw name="Tap Confirm delete task on modal" owner="todo_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${confirmDeleteTaskOnModalBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:02.151252" elapsed="1.028910"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:03.181753" level="INFO">Clicking element 'id=confirm-delete-task'.</msg>
+<arg>${confirmDeleteTaskOnModalBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:35:03.180977" elapsed="1.069936"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:05.276898" level="INFO">Element 'class=notification-success' is displayed.</msg>
+<arg>${notificationSuccessToast}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:04.251061" elapsed="1.026230"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:35:02.150344" elapsed="3.127338"/>
+</kw>
+<kw name="Delete project" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:05.280308" level="INFO">Clicking element 'id=edit-project-btn'.</msg>
+<arg>${editProjectBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:35:05.279680" elapsed="1.072804"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${deleteProjectBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:06.353309" elapsed="1.038775"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:07.393781" level="INFO">Clicking element 'id=remove-project-calendar-btn'.</msg>
+<arg>${deleteProjectBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:35:07.392939" elapsed="1.063621"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${confirmDeleteProjectOnModalBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:08.457388" elapsed="1.037332"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:09.496384" level="INFO">Clicking button 'id=confirm-delete-project'.</msg>
+<arg>${confirmDeleteProjectOnModalBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:35:09.495530" elapsed="2.597329"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:13.116897" level="INFO">Element 'class=notification-success' is displayed.</msg>
+<arg>${notificationSuccessToast}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:12.093023" elapsed="1.024233"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:35:05.278672" elapsed="7.838960"/>
+</kw>
+<kw name="Click avatar button and Logout success" owner="common_keywords" type="TEARDOWN">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${avatarIcon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:13.119790" elapsed="1.031011"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:14.152220" level="INFO">Clicking element 'class=avatar-icon'.</msg>
+<arg>${avatarIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:35:14.151477" elapsed="1.062259"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LogoutBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T17:35:15.214588" elapsed="1.037646"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T17:35:16.253919" level="INFO">Clicking element 'id=logout-btn'.</msg>
+<arg>${LogoutBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T17:35:16.253069" elapsed="1.057422"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:35:13.118863" elapsed="4.192225"/>
+</kw>
+<status status="PASS" start="2024-11-12T17:33:38.809556" elapsed="98.501905"/>
 </test>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-11-06T17:38:05.059909" elapsed="0.202077"/>
+<status status="PASS" start="2024-11-12T17:35:17.313745" elapsed="0.584550"/>
 </kw>
-<status status="FAIL" start="2024-11-06T17:38:00.248956" elapsed="5.013222"/>
+<status status="PASS" start="2024-11-12T17:33:33.602817" elapsed="104.295630"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="featureTodo">featureTodo</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="featureTodo">featureTodo</stat>
 </suite>
 </statistics>
 <errors>

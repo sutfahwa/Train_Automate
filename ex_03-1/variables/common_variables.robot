@@ -1,24 +1,21 @@
 *** Variables ***
-${url}                                  http://webapp-qa.mellow.io/#/announce
-${browser}                              Chrome
-${username}                             qsquad
-${password}                             password
+${url}                          http://webapp-qa.mellow.io/#/announce
+${browser}                      Chrome
+${username}                     qsquad
+${password}                     password
 
 # Login page
-${usernameInput}                        id=username-input
-${passwordInput}                        id=password-input
-${loginBtn}                             id=login-btn
-${successMessage}                       class=notification-message
-${errorMessage}                         class=notification-error
+${usernameInput}                id=username-input
+${passwordInput}                id=password-input
+${loginBtn}                     id=login-btn
+${successMessage}               class=notification-message
+${errorMessage}                 class=notification-error
 
+${navBar}                       id=navigation-bar
+${avatarIcon}                   class=avatar-icon
+${logoutBtn}                    id=logout-btn
 
-${locator_nav-bar}                      id=navigation-bar
-${avatarIcon}                           class=avatar-icon
-${logoutBtn}                            id=logout-btn
+${profileMenuList}              id=profile-menu-list
+${loginContainer}               id=login-inner-container
 
-${locator_profile-menu-list}            id=profile-menu-list
-${locator_login-container}              id=login-inner-container
-
-
-
-
+${notificationSuccessToast}     class=notification-success
